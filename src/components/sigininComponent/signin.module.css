@@ -1,0 +1,50 @@
+.outer{
+    position: relative;
+    top:0%;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 400;
+    border: 1px solid black;
+    background-color: rgb(43, 41, 41);
+    font-family: 'Times New Roman';
+    color: white;
+}
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 55%;
+    height: 8%;
+    font-size: x-large;
+    font-family: 'Viner Hand ITC';
+}
+.outer span{
+    font-size: X-large;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+p{
+    color: red;
+}
+
+@media (max-width:445px){
+    .outer{
+        width:90%;
+    }
+}
+
+@media (max-height:500px){
+    .outer{
+        height: 500px;
+    }
+}

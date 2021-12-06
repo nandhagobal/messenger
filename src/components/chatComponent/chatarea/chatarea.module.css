@@ -1,0 +1,144 @@
+
+.outer{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('../../../wall.jpg'); */
+    background-color:rgb(56, 55, 55) ;
+    width: 50%;
+    height: 80%;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+    z-index: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    /* overflow-x: auto;
+    scrollbar-color: red;
+    scrollbar-width: 100px; */
+    /* max-height: 400px; */
+}
+
+.msgText{
+    width: 100%;
+    height: 100%;
+    font-weight: 100;
+    font-family: 'Rockwell';
+    padding: 2%;
+    overflow: auto;
+    box-sizing: border-box;
+    /* scrollbar-color: red; */
+    /* scrollbar-width: 100px; */
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.span{
+margin-bottom: 5px;
+border:0px solid black;
+font-size: large;
+border-radius: 4px;
+max-width:100%;
+min-width: 20px;
+min-height: 20px;
+overflow:auto;
+padding: 4px;
+}
+
+.bottomLeft div,.bottomRight div{
+    font-size: small;
+    color: white;
+}
+
+.bottomLeft .span {
+    background-color: gray;
+}
+
+.bottomRight span{
+    background-color: aliceblue;
+}
+
+.bottomRight{
+width: 100%;
+color: black;
+display: flex;
+flex-direction: column;
+align-items:flex-end;
+justify-self: start;
+
+}
+
+.bottomLeft{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-self: start;
+    color: white;
+    }
+
+.msgBox{
+    position: relative;
+    font-size: large;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(56, 55, 55);
+    border: 2px solid black; 
+    border-radius:30px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    box-sizing: border-box;
+
+}
+
+.msgBox input{
+    background-color: transparent;
+    height: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    font-size: x-large;
+    width: 80%;
+    border: none;
+    outline: none;
+    color: white;
+    /* border: 2px solid black; */
+}
+
+@media (max-height:440px){
+    .outer{
+        height:500px;
+        top:80px;
+    }
+    .msgBox{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:445px){
+    .outer{
+        width:90%;
+        
+    }
+    .msgBox{
+        justify-content: space-around;
+    }
+}
